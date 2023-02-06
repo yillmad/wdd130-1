@@ -2,6 +2,8 @@
 
 #logo_link{
     padding-top: 5px;
+    z-index: 2;
+    position: relative;
 }
 
 .home-title {
@@ -29,12 +31,14 @@ h2 {
     max-width: 1600px;
     margin: 0 auto;
 }
+
 nav a {
     text-align: center;
     background-color: #F5A051;
     color: #FFFFFF;
     text-decoration: none;
-    margin: 35px;
+    padding: 35px;
+    z-index: 1;
 }
 
 nav a:hover {
