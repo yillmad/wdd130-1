@@ -34,7 +34,7 @@ nav a {
     background-color: #F5A051;
     color: #FFFFFF;
     text-decoration: none;
-    padding: 35px;
+    margin: 35px;
 }
 
 nav a:hover {
