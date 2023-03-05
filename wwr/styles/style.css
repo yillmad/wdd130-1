@@ -87,11 +87,11 @@ nav {
     text-align: center;
 }
   
-main section {
+.home-grid section {
     text-align: center;
 }
 
-main section img{
+.home-grid section img{
     box-sizing: border-box;
 }
 
@@ -228,7 +228,115 @@ footer .social img{
     padding: 10px;
 }
 
+/*Card*/
 
+.faq-grid{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.q1{
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.q2{
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+
+.q3{
+    grid-column: 2/4;
+    grid-row: 4/5;
+}
+
+.q4{
+    grid-column: 5/7;
+    grid-row: 4/5;
+}
+
+.q5{
+    grid-column: 2/4;
+    grid-row: 6/7;
+}
+
+.q6{
+    grid-column: 5/7;
+    grid-row: 6/7;
+}
+
+.contactusbanner{
+    grid-column: 1/8;
+    grid-row: 8/14;
+}
+
+.contactusmsg{
+    grid-column: 2/7;
+    grid-row: 12/13;
+    text-align: center;
+}
+
+.contactus{
+    font-family: 'Merriweather', 'Candara', 'Helvetica', Sans-serif;
+    font-size: 3em;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+#contactus-banner{
+    width: 100%;
+}
+
+.q1 .q2 .q3 .q4 .q5 .q6{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    height: auto;
+}
+
+.questions{
+    color: #F5A051;
+    font-weight: 300;
+}
+
+.card{
+    width: 100%;
+    margin: 40px;
+    border-radius: 6px;
+    overflow: hidden;
+    background:#FFFFFF;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    min-height: 850px;
+}
+
+.card:hover{
+    box-shadow: 5px 1px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido p{
+    line-height: 1.5;
+    color: #1961B3;
+}
+
+.card .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+/*card*/
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
