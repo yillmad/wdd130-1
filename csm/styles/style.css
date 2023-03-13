@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@700&display=swap');
+
+/* header */
+
+#logo_link{
+    z-index: 2;
+    position: relative;
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+nav a{
+    text-align: center;
+    background-color: blue;
+    color: aqua;
+    text-decoration: none;
+    padding: 35px;
+    z-index: 1;
+}
+
+nav a:hover{
+    background-color: aquamarine;
+    color: white;
+}
