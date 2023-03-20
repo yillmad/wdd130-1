@@ -219,6 +219,59 @@ footer .social img {
     padding: 10px;
 }
 
+/* top-mangas */
+
+/* herobox margin */
+
+#hero-img-top {
+    width: 100%;
+    margin: 0 0 45px 0;
+}
+
+
+
+/* top-cards */
+
+.card-container{
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 25px 70px;
+}
+.card-container::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.card-img-top-left{
+    float: left;
+    margin-right: 20px;
+    border-radius: 10%;
+    width: 300px;
+}
+.card-img-top-right{
+    float: right;
+    margin-left: 20px;
+    border-radius: 10%;
+    width: 300px;
+}
+.heading .text{
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.manga-title{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.top-number{
+    margin-bottom: 0;
+}
+.manga-author{
+    margin-top: 0;
+}
+
 /* responsive */
 
 @media screen and (max-width: 900px) {
