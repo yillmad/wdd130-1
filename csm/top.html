@@ -8,6 +8,30 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <!-- Top Button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+        
     <div id="content">
         <header>
             <a id="logo_link" href="index.html">
@@ -19,13 +43,15 @@
                 <a href="newest.html">Newest Mangas</a>
             </nav>
         </header>
-        <div id="hero">
-            <div id="hero-box">
+        <div id="hero-top">
+            <div id="hero-box-top">
                 <img id="hero-img-top" src="images//top-banner.jpg" alt="Best Manga Banner">
             </div>
-            <section id="hero-msg">
-                <h1 class="home-title">MY TOP MANGAS</h1>
-                <h4>Remember this is just my opinion according what I have read and enjoyed, I hope you can find it interesting!.</h4>
+            <section id="hero-msg-top">
+                <h1 class="home-title-top">MY TOP MANGAS</h1>
+                <h4 class="top-msg">After reading many manga series from different authors and genres, here are my top ten 
+                    mangas, remember this is just my opinion according what I have read and enjoyed, I hope 
+                    you can find it interesting!.</h4>
                 <div class="button-box">
                     <a class="subscribe" href="subscribe.html">SUBSCRIBE</a>
                 </div>
