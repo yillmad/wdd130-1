@@ -30,6 +30,11 @@ body p{
     align-self: center;
 }
 
+#logo_link img{
+    width: 100%;
+    margin-left: 10px;
+}
+
 nav a{
     text-align: center;
     background-color: #12E012;
@@ -373,7 +378,7 @@ footer .social img {
     }
     .paragraph-1, .paragraph-2, .card-1, .card-2, .paragraph{ 
         margin: 25px auto;
-        width: 70%;
+        width: 90%;
         text-align: center;
         float: none;
         padding: 3px 3px 3px 3px;
