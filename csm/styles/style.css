@@ -330,7 +330,7 @@ footer .social img {
     margin-top: 0;
 }
 
-/* Top bottom? */
+/* Top-mangas-bottom */
 
 #myBtn {
     display: none;
@@ -353,6 +353,132 @@ footer .social img {
     background-color: #FFFF00;
     color: black;
   }
+
+/* newest */
+
+/* newest-hero */
+
+#hero-newest{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 0px;
+    align-items: center;
+}
+
+#hero-newest-box{
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+
+#hero-newest-img {
+    width: 100%;
+    height: 100%;
+}
+
+#hero-newest-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 0 auto;
+}
+
+
+.newest-title {
+    order: 2;
+    color: #FF4D00;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: clamp(3rem, 10vw, 6rem);
+    line-height: 0.75em;
+    text-align: center;
+    text-shadow: 3px 1px 1px #FFFF00, 2px 2px 1px black, 4px 2px 1px #FFFF00,
+        3px 3px 1px black, 5px 3px 1px #FFFF00, 4px 4px 1px black,
+        6px 4px 1px #FFFF00, 5px 5px 1px black, 7px 5px 1px #FFFF00,
+        6px 6px 1px black, 8px 6px 1px #FFFF00, 7px 7px 1px black,
+        9px 7px 1px #FFFF00;
+}
+
+/* newest-cards */
+article {
+    position: relative;
+    width: 100%;
+    color: #2e2d31;
+    background: #131313;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.cards-img {
+    width: 100%;
+}
+
+.cards-title {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.cards-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+        /* edit the width to fit card */
+    padding: 6%;
+    background: #f2f2f2;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px ;
+        /* edit here to change the height of the content box */
+    transform: translateY(55%);
+    transition: transform .25s;
+    max-height: 90%;
+}
+
+.cards-title {
+    color: #131313;
+    line-height: 15px;
+}
+
+.cards-author {
+    display: block;
+    font-size: 18px; 
+    margin-bottom: 10px;
+}
+
+.cards-description {
+    font-size: calc(8.5px + 0.390625vw);
+    opacity: 0;
+    transition: opacity .5s;
+    width: 100%;
+    height: 50%;
+}
+
+article:hover .cards-content {
+    transform: translateY(0);
+}
+
+article:hover .cards-description {
+    opacity: 1;
+    transition-delay: .25s;
+}
+
+/* newest-grid */
+
+.newest-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2%;
+    row-gap: 0.5%;
+    margin: 2%;
+}
+
+/* new-gen-card */
+
+.new-gen-card {
+    grid-column: 1/4;
+    margin-left: -3%;
+    margin-right: -3%;
+    margin-top: 2%;
+}
 
 /* responsive */
 
