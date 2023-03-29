@@ -476,33 +476,44 @@ article:hover .cards-description {
 .new-gen-card {
     grid-column: 1/4;
     margin-left: -3%;
-    margin-right: -3%;
+    margin-right: -2%;
     margin-top: 2%;
+}
+
+.banner-paragraph {
+    padding-left: 45px;
+    padding-right: 45px;
 }
 
 /* responsive */
 
 @media screen and (max-width: 900px) {
-    #hero, .home-grid, #hero-top, .top-grid{
+    #hero, .home-grid, #hero-top, .top-grid, #hero-newest, .newest-grid{
         display: block;
         height: auto;
     }
+
     nav, footer {
         flex-direction: column;
     }
+
     nav a {
         display: block;
         padding: 15px;
     }
+
     #hero, #hero-top {
         margin-top: 0;
     }
+
     #hero-msg, #hero-msg-top {
         margin-top: 0;
     }
+
     #hero-msg h4, .top-msg {
         display: none;
     }
+
     .paragraph-1, .paragraph-2, .card-1, .card-2, .paragraph{ 
         margin: 25px auto;
         width: 90%;
@@ -541,4 +552,25 @@ article:hover .cards-description {
         box-shadow: 10px 10px 30px rgba(0, 0, 0, .4);
         transform: translateY(-1%);
     }
+
+    article {
+        margin-right: 45px;
+        margin-top: 35px;
+    }
+
+    .cards-description {
+        font-size: 15px;
+    }
+
+    .new-gen-card {
+        margin-top: 35px;
+    }
+
+    .banner-paragraph {
+        text-align: center;
+        margin-left: -20px;
+        margin-right: -20px;
+        font-size: 20px;
+    }
+
 }
