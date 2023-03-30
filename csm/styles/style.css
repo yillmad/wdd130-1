@@ -399,7 +399,7 @@ footer .social img {
 }
 
 /* newest-cards */
-article {
+.newest-cards {
     position: relative;
     width: 100%;
     color: #2e2d31;
@@ -452,11 +452,11 @@ article {
     height: 50%;
 }
 
-article:hover .cards-content {
+.newest-cards:hover .cards-content {
     transform: translateY(0);
 }
 
-article:hover .cards-description {
+.newest-cards:hover .cards-description {
     opacity: 1;
     transition-delay: .25s;
 }
