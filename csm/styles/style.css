@@ -553,7 +553,7 @@ footer .social img {
         transform: translateY(-1%);
     }
 
-    article {
+    .newest-cards {
         margin-right: 45px;
         margin-top: 35px;
     }
