@@ -8,6 +8,30 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <!-- Top Button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+
     <div id="content">
         <header>
             <a id="logo_link" href="index.html">
@@ -43,40 +67,38 @@
                 </div>
             </div>
             <div class="paragraph-1">
-                <p class="paragraph">Manga has a rich and fascinating history that spans over a century. The origins of manga can be traced 
+                <div class="paragraph">
+                    <p>Manga has a rich and fascinating history that spans over a century. The origins of manga can be traced 
                     back to the late 19th century, when the Japanese artist Katsushika Hokusai created a collection of drawings called "Hokusai 
                     Manga." These drawings were not comic books in the modern sense, but rather a collection of sketches that depicted everyday 
-                    life in Japan.
-                    <br>
-                    In the early 20th century, manga began to take on a more modern form. The first true manga magazine, Shonen Sekai, was 
+                    life in Japan.</p>
+                    <p>In the early 20th century, manga began to take on a more modern form. The first true manga magazine, Shonen Sekai, was 
                     published in 1895. This magazine featured a mix of short stories, political satire, and illustrations. Over the years, 
-                    manga evolved to include longer story arcs, more complex characters, and a wider range of genres.
-                    <br>
-                    During World War II, the Japanese government placed strict controls on the content of manga. Many manga artists were forced 
+                    manga evolved to include longer story arcs, more complex characters, and a wider range of genres.</p>
+                    <p>During World War II, the Japanese government placed strict controls on the content of manga. Many manga artists were forced 
                     to create propaganda for the government, but some artists continued to produce underground manga that criticized the 
-                    government and provided a voice for dissent.
-                    <br>
-                    In the 1950s, manga experienced a major shift with the introduction of "shonen manga." This genre was specifically targeted 
+                    government and provided a voice for dissent.</p>
+                    <p>In the 1950s, manga experienced a major shift with the introduction of "shonen manga." This genre was specifically targeted 
                     towards young boys and featured themes of action, adventure, and heroism. Shonen manga quickly became incredibly popular 
-                    and led to the creation of many iconic manga series such as Dragon Ball, Naruto, and One Piece.
-                    <br>
-                    In the following decades, manga continued to evolve and diversify. New genres emerged, such as shojo manga (manga targeted 
+                    and led to the creation of many iconic manga series such as Dragon Ball, Naruto, and One Piece.</p>
+                    <p>In the following decades, manga continued to evolve and diversify. New genres emerged, such as shojo manga (manga targeted 
                     towards young girls) and seinen manga (manga targeted towards adult men). Manga also began to gain popularity outside of 
-                    Japan, with translations of popular series becoming available in other countries.
-                </p>
+                    Japan, with translations of popular series becoming available in other countries.</p>
+                    </div>
             </div>
             <div class="card-banner">
                 <img class="card-banner-img" src="images/Page1-big-three.png" alt="The Big three">
-                <p class="paragraph">Another group of mangakas that played a significant role in the evolution of manga are known as the "Big 
+                <div class="paragraph">
+                    <p>Another group of mangakas that played a significant role in the evolution of manga are known as the "Big 
                     Three." This term refers to the three most influential shonen manga series of the 2000s: One Piece, Naruto, and Bleach. 
-                    These series had a massive impact on the shonen manga genre and helped shape the direction of manga in the 21st century.
-                    <br>
-                    Eiichiro Oda is the mangaka behind One Piece, which has become one of the best-selling manga series of all time. Oda's 
+                    These series had a massive impact on the shonen manga genre and helped shape the direction of manga in the 21st century.</p>
+                    <p>Eiichiro Oda is the mangaka behind One Piece, which has become one of the best-selling manga series of all time. Oda's 
                     unique art style and storytelling techniques have had a significant influence on the shonen manga genre, and he has inspired 
                     many other mangakas. Masashi Kishimoto, the creator of Naruto, introduced many new elements to the shonen manga genre, 
                     including complex character relationships, political intrigue, and philosophical themes. Finally, Tite Kubo's Bleach broke 
                     new ground with its unique blend of action, supernatural elements, and humor. Together, these three series and their creators 
                     have helped shape the evolution of manga into the highly respected and widely popular art form it is today.</p>
+                </div>
             </div>
             <div class="card-2">
                 <img class="card-img" src="images/Page1-Naoki.png" alt="Naoki Urasawa Work">
@@ -88,23 +110,21 @@
                 </div>
             </div>
             <div class="paragraph-2">
-                <p class="paragraph"> In addition to the previously mentioned mangakas, there are many other important figures who have helped 
+                <div class="paragraph"> 
+                    <p>In addition to the previously mentioned mangakas, there are many other important figures who have helped 
                     shape the evolution of manga. Inio Asano is known for his introspective and psychological stories that often deal with themes of 
                     alienation and depression. His works, such as Solanin and Goodnight Punpun, have gained a following for their unique art style 
-                    and thought-provoking narratives.
-                    <br>
-                    Kentaro Miura, on the other hand, is known for his dark fantasy epic, Berserk. The manga's detailed and intricate art style, 
-                    combined with its complex characters and storylines, have made it a fan favorite for over three decades.
-                    <br>
-                    Finally, Junji Ito is a master of horror manga, with works such as Uzumaki and Tomie being considered classics of the genre. 
-                    His art style, which often features surreal and grotesque imagery, has been imitated by many other horror manga creators.
-                    <br>
-                    In conclusion, manga has come a long way since its humble beginnings in the late 19th century. It has evolved from a form of 
+                    and thought-provoking narratives.</p>
+                    <p>Kentaro Miura, on the other hand, is known for his dark fantasy epic, Berserk. The manga's detailed and intricate art style, 
+                    combined with its complex characters and storylines, have made it a fan favorite for over three decades.</p>
+                    <p>Finally, Junji Ito is a master of horror manga, with works such as Uzumaki and Tomie being considered classics of the genre. 
+                    His art style, which often features surreal and grotesque imagery, has been imitated by many other horror manga creators.</p>
+                    <p>In conclusion, manga has come a long way since its humble beginnings in the late 19th century. It has evolved from a form of 
                     entertainment for children into a highly respected art form that is enjoyed by people of all ages around the world. From the 
                     pioneers of manga such as Osamu Tezuka to the Big Three of the 2000s, and the many other important mangakas in between, each has 
                     contributed to the rich and diverse tapestry that is manga. As the genre continues to evolve and grow, it is certain that new 
-                    mangakas will emerge to push the boundaries even further and continue the legacy of this incredible art form.
-                </p>
+                    mangakas will emerge to push the boundaries even further and continue the legacy of this incredible art form.</p>
+                </div>
             </div>
         </main>
         <footer>
